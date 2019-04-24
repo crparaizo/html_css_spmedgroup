@@ -40,7 +40,7 @@ Div maior do main será fix */
     float: right;
     margin-right: 1em;
     border: 5px solid rgb(191, 228, 253);
-    width: 15em;
+    width: 13em;
     /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 }
 
@@ -112,7 +112,7 @@ Div maior do main será fix */
 }
 
 .listas__button{
-    margin: 3em 0 0 3em;
+    margin: 3em 0 0 4.2em;
     width: 6em;
     height: 3em;
     text-decoration: underline;
@@ -138,6 +138,9 @@ Div maior do main será fix */
     display: flex;
     /* background-color: rgb(202, 230, 243); */
     /* table-layout: fixed; */
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
 }
 
 .tabela{
@@ -187,4 +190,36 @@ Div maior do main será fix */
     background-color: darkred;
     color: white;
     text-decoration-color: white;
+}
+
+.formulario{
+    background-color: #c2dff144;
+    /* display: flex;   */
+    flex-direction: column; 
+    padding: 1.60em;
+    
+}
+
+.formulario__item{
+    width: 20em;
+    height: 5em;
+    padding: 0 0 0 2em;
+    font-size: 0.9em;
+    color: darkviolet;
+    background-color: #c2dff11e;
+
+    border-top: none;
+    border-bottom: 2px solid rgba(255, 140, 0, 0.301);
+    border-left: none;
+    border-right: none;
+}
+
+.formulario__button{
+    height: 5vh;
+    width: 5vw;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: white;
+    background-color: gray;
+    margin: 2em 12em 0 12em;
 }

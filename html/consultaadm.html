@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/listaconsultaadm.css">
+    <link rel="stylesheet" href="../css/consultaadm.css">
     <title>Consultas</title>
 </head>
 
@@ -66,11 +66,16 @@
         </div>
     </aside>
     <main class="listas">
-        <!-- Configurar modal! -->
-        <button class="listas__button listas__button--lista">Lista</button>
-        <button class="listas__button listas__button--cadastrar">Cadastrar+</button>
+        <!-- Configuração Tab Html! -->
+        <!-- (button)openPage("Nome") tem que ser igual (div/table)id="Nome" -->
+        <button class="listas__button listas__button--lista tablink" onclick="openPage('Lista')"
+            id="defaultOpen">Lista</button>
+
+        <button class="listas__button listas__button--cadastrar tablink"
+            onclick="openPage('Cadastrar')">Cadastrar+</button>
+
         <div class="contorno">
-            <div class="tabela">
+            <div id="Lista" class="tabela tabcontent">
                 <table class="tabela__real">
                     <thead class="tabela-head">
                         <tr>
@@ -97,8 +102,29 @@
                     <button class="botoes__item botoes__item--deletar">Deletar</button>
                 </div>
             </div>
+            <div id="Cadastrar" class="formulario tabcontent" style="display:none">
+                <label for=""><input class="formulario__item" type="text" placeholder="Nome do Paciente" /></label>
+                <!-- <label for=""><input class="formulario__item" type="text" placeholder="ID do Paciente" /></label> -->
+                <!-- FAZER UMA COIXA DE SELEÇÃO? -->
+                <label for=""><input class="formulario__item" type="text" placeholder="Nome do Médico" /></label>
+                <!-- <label for=""><input class="formulario__item" type="text" placeholder="ID do Médico" /></label> -->
+                <label for=""><input class="formulario__item" type="text" placeholder="Data da Consulta" /></label>
+                <label for=""><input class="formulario__item" type="text" placeholder="Descrição" /></label>
+                <button class="formulario__button">Enviar</button>
+            </div>
         </div>
     </main>
+
+    <script>
+        function openPage(namePage) {
+            var i;
+            var x = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(namePage).style.display = "flex";
+        }
+    </script>
 </body>
 
 </html>

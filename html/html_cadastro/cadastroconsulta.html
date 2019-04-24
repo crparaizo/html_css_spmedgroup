@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/cadastrousuario.css">
-    <title>Usuários</title>
+    <link rel="stylesheet" href="../../css/css_cadastro/cadastroconsulta.css">
+    <title>Consultas</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
     <aside>
         <div class="menu">
             <h3 class="menu__titulo">Administrador</h3>
-            <img class="menu__imagem" src="../img/icon-login.png" alt="">
+            <img class="menu__imagem" src="../../img/icon-login.png" alt="">
             <!-- IMAGEM -->
             <div class="links">
                 <nav>
@@ -29,14 +29,14 @@
                         <!-- Páginas de médico e paciente terão menos links -->
                         <li class="links__item"><a class="links__titulo" href="#">Prontuários</a></li>
                         <div class="links__quebra"></div>
-                        <li class="links__item"><a class="links__titulo"
+                        <li class="links__item"><a class="links__titulo links__titulo--selecionado"
                                 href="#">Consultas</a></li>
                         <div class="links__quebra"></div>
                         <li class="links__item"><a class="links__titulo" href="#">Clínicas</a></li>
                         <div class="links__quebra"></div>
                         <li class="links__item"><a class="links__titulo" href="#">Médicos</a></li>
                         <div class="links__quebra"></div>
-                        <li class="links__item"><a class="links__titulo links__titulo--selecionado" href="#">Usuários</a></li>
+                        <li class="links__item"><a class="links__titulo" href="#">Usuários</a></li>
                         <div class="links__quebra"></div>
                         <li class="links__item"><a class="links__titulo" href="#">Especialidades</a></li>
                         <div class="links__quebra"></div>
@@ -54,14 +54,14 @@
         <button class="listas__button listas__button--lista">Lista</button>
         <div class="contorno">
             <div class="formulario">
-                    <label for=""><input class="formulario__item" type="text" placeholder="Nome" /></label>
-                    <!-- <label for=""><input class="formulario__item" type="text" placeholder="ID do Usuário" /></label> -->
-                    <label for=""><input class="formulario__item" type="text" placeholder="Email" /></label>
-                    <label for=""><input class="formulario__item" type="text" placeholder="Senha" /></label>
-                    <!-- FAZER UMA COIXA DE SELEÇÃO? -->
-                    <label for=""><input class="formulario__item" type="text" placeholder="Tipo de Usuário" /></label>
-                    <!-- <label for=""><input class="formulario__item" type="text" placeholder="ID do Usuário" /></label> -->
-                    <button class="formulario__button">Enviar</button>
+                <label for=""><input class="formulario__item" type="text" placeholder="Nome do Paciente" /></label>
+                <!-- <label for=""><input class="formulario__item" type="text" placeholder="ID do Paciente" /></label> -->
+                <!-- FAZER UMA COIXA DE SELEÇÃO? -->
+                <label for=""><input class="formulario__item" type="text" placeholder="Nome do Médico" /></label>
+                <!-- <label for=""><input class="formulario__item" type="text" placeholder="ID do Médico" /></label> -->
+                <label for=""><input class="formulario__item" type="text" placeholder="Data da Consulta" /></label>
+                <label for=""><input class="formulario__item" type="text" placeholder="Descrição" /></label>
+                <button class="formulario__button">Enviar</button>
             </div>
         </div>
     </main>
