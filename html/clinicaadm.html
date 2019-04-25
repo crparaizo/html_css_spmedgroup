@@ -11,111 +11,103 @@
 
 <body>
     <header>
-        <div class="topo">
-            <div class="topo__quebra"></div>
-            <h1 class="topo__h1">Consultas</h1>
-            <div class="topo__quebra topo__quebra--modificado"></div>
+        <div class="topo-clinica">
+            <div class="topo-clinica__quebra"></div>
+            <h1 class="topo-clinica__h1">Consultas</h1>
+            <div class="topo-clinica__quebra topo-clinica__quebra--modificado"></div>
+            <select class="topo-clinica__item" name="" id="">
+                <option value="">ID</option>
+                <option value="">Nome Fantasia</option>
+                <option value="">Horário Funcionamento</option>
+                <option value="">CNPJ</option>
+                <option value="">Razão Social</option>
+                <option value="">Endereço</option>
+            </select>
             <label for="">
-                <input class="topo__item" type="text" placeholder="Buscar por CNPJ..." />
+                <input class="topo-clinica__item" type="text" placeholder="Buscar por ..." />
             </label>
-            <label for="">
-                <input class="topo__item" type="text" placeholder="Buscar por ID..." />
-            </label>
-            <!-- //Filtro do filtro -->
-            <label for="">
-                <input class="topo__item" type="text" placeholder="Buscar por Nome Fantasia..." />
-            </label>
-            <label for="">
-                <input class="topo__item" type="text" placeholder="Buscar por Horário de Funcionamento..." />
-            </label>
-            <label for="">
-                <input class="topo__item" type="text" placeholder="Buscar por Razão Social..." />
-            </label>
-            <label for="">
-                <input class="topo__item" type="text" placeholder="Buscar por Endereço..." />
-            </label>
-            <button class="topo__button">Limpar</button>
         </div>
     </header>
     <aside>
-        <div class="menu">
-            <h3 class="menu__titulo">Administrador</h3>
-            <img class="menu__imagem" src="../img/icon-login.png" alt="">
+        <div class="menu-clinica">
+            <h3 class="menu-clinica__titulo">Administrador</h3>
+            <img class="menu-clinica__imagem" src="../img/icon-login.png" alt="">
             <!-- IMAGEM -->
-            <div class="links">
+            <div class="links-clinica">
                 <nav>
                     <ul>
                         <!-- Colocar URL's -->
-                        <!-- Páginas de médico e paciente terão menos links -->
-                        <li class="links__item"><a class="links__titulo" href="#">Prontuários</a></li>
-                        <div class="links__quebra"></div>
-                        <li class="links__item"><a class="links__titulo" href="#">Consultas</a></li>
-                        <div class="links__quebra"></div>
-                        <li class="links__item"><a class="links__titulo links__titulo--selecionado"
-                                href="#">Clínicas</a></li>
-                        <div class="links__quebra"></div>
-                        <li class="links__item"><a class="links__titulo" href="#">Médicos</a></li>
-                        <div class="links__quebra"></div>
-                        <li class="links__item"><a class="links__titulo" href="#">Usuários</a></li>
-                        <div class="links__quebra"></div>
-                        <li class="links__item"><a class="links__titulo" href="#">Especialidades</a></li>
-                        <div class="links__quebra"></div>
+                        <!-- Páginas de médico e paciente terão menos links-clinica -->
+                        <li class="links-clinica__item"><a class="links-clinica__titulo" href="#">Prontuários</a></li>
+                        <div class="links-clinica__quebra"></div>
+                        <li class="links-clinica__item"><a class="links-clinica__titulo" href="#">Consultas</a></li>
+                        <div class="links-clinica__quebra"></div>
+                        <li class="links-clinica__item"><a
+                                class="links-clinica__titulo links-clinica__titulo--selecionado" href="#">Clínicas</a>
+                        </li>
+                        <div class="links-clinica__quebra"></div>
+                        <li class="links-clinica__item"><a class="links-clinica__titulo" href="#">Médicos</a></li>
+                        <div class="links-clinica__quebra"></div>
+                        <li class="links-clinica__item"><a class="links-clinica__titulo" href="#">Usuários</a></li>
+                        <div class="links-clinica__quebra"></div>
+                        <li class="links-clinica__item"><a class="links-clinica__titulo" href="#">Especialidades</a>
+                        </li>
+                        <div class="links-clinica__quebra"></div>
                     </ul>
                 </nav>
             </div>
             <!-- Escolher um deles: -->
-            <a class="menu__link" href="#">Sair</a>
+            <a class="menu-clinica__link" href="#">Sair</a>
             <!-- <button>Sair</button> -->
         </div>
     </aside>
-    <main class="listas">
+    <main class="listas-clinica">
         <!-- Configuração Tab Html! -->
         <!-- (button)openPage("Nome") tem que ser igual (div/table)id="Nome" -->
-        <button class="listas__button listas__button--lista tablink" onclick="openPage('Lista')"
+        <button class="listas-clinica__button listas-clinica__button--lista tablink" onclick="openPage('Lista')"
             id="defaultOpen">Lista</button>
 
-        <button class="listas__button listas__button--cadastrar tablink"
+        <button class="listas-clinica__button listas-clinica__button--cadastrar tablink"
             onclick="openPage('Cadastrar')">Cadastrar+</button>
 
         <div class="contorno">
 
-            <div id="Lista" class="tabela tabcontent">
-                <table class="tabela__real">
-                    <thead class="tabela-head">
+            <div id="Lista" class="tabela-clinica tabcontent">
+                <table class="tabela-clinica__real">
+                    <thead class="tabela-clinica-head">
                         <tr>
-                            <th class="tabela-head__titulo">Clínica(ID)</th>
-                            <th class="tabela-head__titulo">Nome Fantasia</th>
-                            <th class="tabela-head__titulo">Horário Funcionamento</th>
-                            <th class="tabela-head__titulo">CNPJ</th>
-                            <th class="tabela-head__titulo">Razão Social</th>
+                            <th class="tabela-clinica-head__titulo">Clínica(ID)</th>
+                            <th class="tabela-clinica-head__titulo">Nome Fantasia</th>
+                            <th class="tabela-clinica-head__titulo">Horário Funcionamento</th>
+                            <th class="tabela-clinica-head__titulo">CNPJ</th>
+                            <th class="tabela-clinica-head__titulo">Razão Social</th>
                             <!-- <a href="#">Alterar</a> -->
                         </tr>
                     </thead>
-                    <tbody class="tabela-body">
+                    <tbody class="tabela-clinica-body">
                         <tr>
-                            <td class="tabela-body_dado">{clinica.id}</td>
-                            <td class="tabela-body_dado">{clinica.nomeFantadia}</td>
-                            <td class="tabela-body_dado">{clinicahorarioFuncionamento}</td>
-                            <td class="tabela-body_dado">{clinica.cnpj}</td>
-                            <td class="tabela-body_dado">{clinica.razalSocial}</td>
+                            <td class="tabela-clinica-body_dado">{clinica.id}</td>
+                            <td class="tabela-clinica-body_dado">{clinica.nomeFantadia}</td>
+                            <td class="tabela-clinica-body_dado">{clinicahorarioFuncionamento}</td>
+                            <td class="tabela-clinica-body_dado">{clinica.cnpj}</td>
+                            <td class="tabela-clinica-body_dado">{clinica.razalSocial}</td>
+                            <div class="botoes-clinica">
+                                <button class="botoes-clinica__item botoes-clinica__item--alterar">Alterar</button>
+                                <button class="botoes-clinica__item botoes-clinica__item--deletar">Deletar</button>
+                            </div>
                         </tr>
                     </tbody>
                 </table>
-                <div class="botoes">
-                    <button class="botoes__item botoes__item--alterar">Alterar</button>
-                    <button class="botoes__item botoes__item--deletar">Deletar</button>
-                </div>
             </div>
 
-
-            <div id="Cadastrar" class="formulario tabcontent" style="display:none">
-                <label for=""><input class="formulario__item" type="text" placeholder="Nome Fantasia" /></label>
-                <label for=""><input class="formulario__item" type="text"
+            <div id="Cadastrar" class="formulario-clinica tabcontent" style="display:none">
+                <label for=""><input class="formulario-clinica__item" type="text" placeholder="Nome Fantasia" /></label>
+                <label for=""><input class="formulario-clinica__item" type="text"
                         placeholder="Horário de Funcionamento" /></label>
-                <label for=""><input class="formulario__item" type="text" placeholder="CNPJ" /></label>
-                <label for=""><input class="formulario__item" type="text" placeholder="Razão Social" /></label>
-                <label for=""><input class="formulario__item" type="text" placeholder="Endereço" /></label>
-                <button class="formulario__button">Enviar</button>
+                <label for=""><input class="formulario-clinica__item" type="text" placeholder="CNPJ" /></label>
+                <label for=""><input class="formulario-clinica__item" type="text" placeholder="Razão Social" /></label>
+                <label for=""><input class="formulario-clinica__item" type="text" placeholder="Endereço" /></label>
+                <button class="formulario-clinica__button">Enviar</button>
             </div>
         </div>
 

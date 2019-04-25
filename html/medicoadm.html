@@ -15,6 +15,7 @@
             <div class="topo__quebra"></div>
             <h1 class="topo__h1">Consultas</h1>
             <div class="topo__quebra topo__quebra--modificado"></div>
+            <!-- Filtro específico -->
             <label for="">
                 <input class="topo__item" type="text" placeholder="Buscar por CRM..." />
             </label>
@@ -40,18 +41,19 @@
                     <ul>
                         <!-- Colocar URL's -->
                         <!-- Páginas de médico e paciente terão menos links -->
-                        <li class="links__item"><a class="links__titulo" href="#">Prontuários</a></li>
+                        <li class="links__item"><a class="links__titulo" href="/prontuarios">Prontuários</a></li>
                         <div class="links__quebra"></div>
-                        <li class="links__item"><a class="links__titulo" href="#">Consultas</a></li>
+                        <li class="links__item"><a class="links__titulo" href="/consultas">Consultas</a></li>
                         <div class="links__quebra"></div>
-                        <li class="links__item"><a class="links__titulo" href="#">Clínicas</a></li>
+                        <li class="links__item"><a class="links__titulo" href="/clinicas">Clínicas</a></li>
                         <div class="links__quebra"></div>
-                        <li class="links__item"><a class="links__titulo links__titulo--selecionado" href="#">Médicos</a>
+                        <li class="links__item"><a class="links__titulo links__titulo--selecionado"
+                                href="/medicos">Médicos</a>
                         </li>
                         <div class="links__quebra"></div>
-                        <li class="links__item"><a class="links__titulo" href="#">Usuários</a></li>
+                        <li class="links__item"><a class="links__titulo" href="/usuarios">Usuários</a></li>
                         <div class="links__quebra"></div>
-                        <li class="links__item"><a class="links__titulo" href="#">Especialidades</a></li>
+                        <li class="links__item"><a class="links__titulo" href="/especialidades">Especialidades</a></li>
                         <div class="links__quebra"></div>
                     </ul>
                 </nav>
@@ -87,23 +89,22 @@
                             <td class="tabela-body_dado">{medico.medico}</td>
                             <td class="tabela-body_dado">{medico.especialidade}</td>
                             <td class="tabela-body_dado">{medico.clinica}</td>
+                            <div class="botoes">
+                                <button class="botoes__item botoes__item--alterar">Alterar</button>
+                                <button class="botoes__item botoes__item--deletar">Deletar</button>
+                            </div>
                         </tr>
                     </tbody>
                 </table>
-                <div class="botoes">
-                    <button class="botoes__item botoes__item--alterar">Alterar</button>
-                    <button class="botoes__item botoes__item--deletar">Deletar</button>
-                </div>
             </div>
             <div id="Cadastrar" class="formulario tabcontent" style="display:none">
                 <!-- FAZER UMA COIXA DE SELEÇÃO? -->
                 <label for=""><input class="formulario__item" type="text" placeholder="Nome do Médico" /></label>
-                <!-- <label for=""><input class="formulario__item" type="text" placeholder="ID do Médico" /></label> -->
                 <label for=""><input class="formulario__item" type="text" placeholder="CRM" /></label>
+                <!-- FAZER UMA COIXA DE SELEÇÃO? -->
                 <label for=""><input class="formulario__item" type="text" placeholder="Especialidade" /></label>
-                <!-- <label for=""><input class="formulario__item" type="text" placeholder="ID da Especialidade" /></label> -->
+                <!-- FAZER UMA COIXA DE SELEÇÃO? -->
                 <label for=""><input class="formulario__item" type="text" placeholder="Clínica" /></label>
-                <!-- <label for=""><input class="formulario__item" type="text" placeholder="ID da Clínica" /></label> -->
                 <button class="formulario__button">Enviar</button>
             </div>
         </div>

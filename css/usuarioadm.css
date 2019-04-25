@@ -1,4 +1,4 @@
-/* Menu será fixo
+/* Menu-usuario será fixo
 Div maior do main será fix */
 
 /* Lembrete: não há body no React */
@@ -11,13 +11,13 @@ Div maior do main será fix */
 }
 
 /* Alterar FONTE das letras */
-.topo{
+.topo-usuario{
     float: right;
     /* margin: 0 1.5%; */
      width: 80%;
 }
 
-.topo__quebra{
+.topo-usuario__quebra{
     background-color: rgb(191, 228, 253);
     /* #81AFD7 */
     width: 100%;
@@ -25,18 +25,18 @@ Div maior do main será fix */
     margin: 0 0 1em 0;
 }
 
-.topo__quebra--modificado{
+.topo-usuario__quebra--modificado{
     margin: 1em 0 0 0;
 }
 
-.topo__h1{
+.topo-usuario__h1{
     font-size: 6vh;
     text-align: center;
     color: #a2daff;
     text-shadow: -1px 0 rgb(98, 98, 148), 0 1px rgb(98, 98, 148), 1px 0 rgb(98, 98, 148), 0 -1px rgb(98, 98, 148);
 }
 
-.topo__item{
+.topo-usuario__item{
     float: right;
     margin-right: 1em;
     border: 5px solid rgb(191, 228, 253);
@@ -44,13 +44,13 @@ Div maior do main será fix */
     /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 }
 
-.topo__button{
+.topo-usuario__button{
     height: 2em;
     width: 5em;
     margin-left: 3em;
 }
 
-.menu{
+.menu-usuario{
     float: left;
     width: 20%;
     border: 1em solid rgb(191, 228, 253);
@@ -61,57 +61,57 @@ Div maior do main será fix */
     height: 95%; */
 }
 
-.menu__titulo{
+.menu-usuario__titulo{
     font-size: 2em;
     margin-bottom: 1em;
 }
 
-.menu__imagem{
+.menu-usuario__imagem{
     width: 6em;
     margin-bottom: 1.2em;
 }
 
-.menu__link{
+.menu-usuario__link{
     font-size: 1.5em;
     color: green;
     text-transform: uppercase;
     /* margin-bottom: 0.8em; */
 }
 
-.menu__link:hover{
+.menu-usuario__link:hover{
     color: red;
 }
 
-.links__item{
+.links-usuario__item{
     list-style-type: none;
     font-size: 1.47em;
 }
 
-.links__titulo{
+.links-usuario__titulo{
     color: darkorange;
     text-decoration: none;    
 }
 
-.links__titulo:hover{
+.links-usuario__titulo:hover{
     color: #aaaeff;
     /* text-decoration: none;   */
 }
 
-.links__titulo--selecionado{
+.links-usuario__titulo--selecionado{
     color: #ffb59c;
 }
 
-.links__titulo--selecionado:hover{
+.links-usuario__titulo--selecionado:hover{
     color: #9cffcf;
 }
 
-.links__quebra{
+.links-usuario__quebra{
     height: 2px;
     background-color: hsla(15, 100%, 81%, 0.301);
     margin: 1em 0;
 }
 
-.listas__button{
+.listas-usuario__button{
     margin: 3em 0 0 4.2em;
     width: 6em;
     height: 3em;
@@ -119,14 +119,14 @@ Div maior do main será fix */
     font-size: 1em;
 }
 
-.listas__button--lista{
+.listas-usuario__button--lista{
     text-decoration: none;
     background-color: #a2daff;
     border: none;
     color: white;
 }
 
-.listas__button--cadastrar{
+.listas-usuario__button--cadastrar{
     margin: 3em 0 0 0;
     text-decoration-color: darkorange;
     color: darkorange;
@@ -143,7 +143,7 @@ Div maior do main será fix */
     justify-items: center;
 }
 
-.tabela{
+.tabela-usuario{
     display: flex;
     justify-items: center;
     justify-content: center;
@@ -154,45 +154,45 @@ Div maior do main será fix */
     /* table-layout: fixed; */
 }
 
-.tabela__real{    
+.tabela-usuario__real{    
     display: inline-table;
     border-collapse: collapse;
 }
 
-.tabela-head__titulo{
+.tabela-usuario-head__titulo{
     padding: 0 1em;
     border: 5px solid rgba(107, 161, 156, 0.568);
 }
 
-.tabela-body_dado{
+.tabela-usuario-body_dado{
     padding: 0 1em;
     border: 5px solid rgba(107, 161, 156, 0.568);
 }
 
-.botoes{
+.botoes-usuario{
     display: flex;
     flex-direction: column;
 }
 
-.botoes__item{
+.botoes-usuario__item{
     width: 5em;
     height: 1.92em;
     text-decoration: underline;
 }
 
-.botoes__item--alterar{
+.botoes-usuario__item--alterar{
     background-color: gray;
     color: white;
     text-decoration-color: white;
 }
 
-.botoes__item--deletar{
+.botoes-usuario__item--deletar{
     background-color: darkred;
     color: white;
     text-decoration-color: white;
 }
 
-.formulario{
+.formulario-usuario{
     background-color: #c2dff144;
     /* display: flex;   */
     flex-direction: column; 
@@ -200,7 +200,7 @@ Div maior do main será fix */
     
 }
 
-.formulario__item{
+.formulario-usuario__item{
     width: 20em;
     height: 5em;
     padding: 0 0 0 2em;
@@ -214,7 +214,7 @@ Div maior do main será fix */
     border-right: none;
 }
 
-.formulario__button{
+.formulario-usuario__button{
     height: 5vh;
     width: 5vw;
     color: white;

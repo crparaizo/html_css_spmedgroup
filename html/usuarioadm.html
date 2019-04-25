@@ -11,101 +11,102 @@
 
 <body>
     <header>
-        <div class="topo">
-            <div class="topo__quebra"></div>
-            <h1 class="topo__h1">Consultas</h1>
-            <div class="topo__quebra topo__quebra--modificado"></div>
+        <div class="topo-usuario">
+            <div class="topo-usuario__quebra"></div>
+            <h1 class="topo-usuario__h1">Consultas</h1>
+            <div class="topo-usuario__quebra topo-usuario__quebra--modificado"></div>
+            <!-- Filtros específicos -->
             <label for="">
-                <input class="topo__item" type="text" placeholder="Buscar por ID..." />
+                <input class="topo-usuario__item" type="text" placeholder="Buscar por..." />
             </label>
+            <select name="" id="">
+                <option value="">ID</option>
+                <option value="">Email</option>
+            </select>
             <!-- FILTRO DO FILTRO -->
             <label for="">
-                <input class="topo__item" type="text" placeholder="Buscar por Tipo de Usuário..." />
+                <input class="topo-usuario__item" type="text" placeholder="Buscar por Tipo de Usuário..." />
             </label>
             <label for="">
-                <input class="topo__item" type="text" placeholder="Buscar por Nome..." />
+                <input class="topo-usuario__item" type="text" placeholder="Buscar por Nome..." />
             </label>
-            <label for="">
-                <input class="topo__item" type="text" placeholder="Buscar por Email..." />
-            </label>
-            <button class="topo__button">Limpar</button>
-
+            <button class="topo-usuario__button">Limpar</button>
         </div>
     </header>
     <aside>
-        <div class="menu">
-            <h3 class="menu__titulo">Administrador</h3>
-            <img class="menu__imagem" src="../img/icon-login.png" alt="">
+        <div class="menu-usuario">
+            <h3 class="menu-usuario__titulo">Administrador</h3>
+            <img class="menu-usuario__imagem" src="../img/icon-login.png" alt="">
             <!-- IMAGEM -->
-            <div class="links">
+            <div class="links-usuario">
                 <nav>
                     <ul>
                         <!-- Colocar URL's -->
-                        <!-- Páginas de médico e paciente terão menos links -->
-                        <li class="links__item"><a class="links__titulo" href="#">Prontuários</a></li>
-                        <div class="links__quebra"></div>
-                        <li class="links__item"><a class="links__titulo" href="#">Consultas</a></li>
-                        <div class="links__quebra"></div>
-                        <li class="links__item"><a class="links__titulo" href="#">Clínicas</a></li>
-                        <div class="links__quebra"></div>
-                        <li class="links__item"><a class="links__titulo" href="#">Médicos</a></li>
-                        <div class="links__quebra"></div>
-                        <li class="links__item"><a class="links__titulo links__titulo--selecionado"
-                                href="#">Usuários</a></li>
-                        <div class="links__quebra"></div>
-                        <li class="links__item"><a class="links__titulo" href="#">Especialidades</a></li>
-                        <div class="links__quebra"></div>
+                        <!-- Páginas de médico e paciente terão menos links-usuario -->
+                        <li class="links-usuario__item"><a class="links-usuario__titulo" href="/prontuarios">Prontuários</a></li>
+                        <div class="links-usuario__quebra"></div>
+                        <li class="links-usuario__item"><a class="links-usuario__titulo" href="/consultas">Consultas</a></li>
+                        <div class="links-usuario__quebra"></div>
+                        <li class="links-usuario__item"><a class="links-usuario__titulo" href="clinicas">Clínicas</a></li>
+                        <div class="links-usuario__quebra"></div>
+                        <li class="links-usuario__item"><a class="links-usuario__titulo" href="medicos">Médicos</a></li>
+                        <div class="links-usuario__quebra"></div>
+                        <li class="links-usuario__item"><a class="links-usuario__titulo links-usuario__titulo--selecionado"
+                                href="usuarios">Usuários</a></li>
+                        <div class="links-usuario__quebra"></div>
+                        <li class="links-usuario__item"><a class="links-usuario__titulo" href="/especialidades">Especialidades</a></li>
+                        <div class="links-usuario__quebra"></div>
                     </ul>
                 </nav>
             </div>
-            <!-- Escolher um deles: -->
-            <a class="menu__link" href="#">Sair</a>
-            <!-- <button>Sair</button> -->
+            <a class="menu-usuario__link" href="#">Sair</a>
         </div>
     </aside>
-    <main class="listas">
-        <!-- Configurar modal! -->
-        <button class="listas__button listas__button--lista tablink" onclick="openPage('Lista')"
+    <main class="listas-usuario">
+        <button class="listas-usuario__button listas-usuario__button--lista tablink" onclick="openPage('Lista')"
             id="defaultOpen">Lista</button>
 
-        <button class="listas__button listas__button--cadastrar tablink"
+        <button class="listas-usuario__button listas-usuario__button--cadastrar tablink"
             onclick="openPage('Cadastrar')">Cadastrar+</button>
 
         <div class="contorno">
-            <div id="Lista" class="tabela tabcontent">
-                <table class="tabela__real">
-                    <thead class="tabela-head">
+            <div id="Lista" class="tabela-usuario tabcontent">
+                <table class="tabela-usuario__real">
+                    <thead class="tabela-usuario-head">
                         <tr>
-                            <th class="tabela-head__titulo">Usuário(ID)</th>
-                            <th class="tabela-head__titulo">Email</th>
-                            <th class="tabela-head__titulo">Senha</th>
-                            <th class="tabela-head__titulo">Tipo Usuário</th>
+                            <th class="tabela-usuario-head__titulo">Usuário(ID)</th>
+                            <th class="tabela-usuario-head__titulo">Email</th>
+                            <th class="tabela-usuario-head__titulo">Senha</th>
+                            <th class="tabela-usuario-head__titulo">Tipo Usuário</th>
                             <!-- <a href="#">Alterar</a> -->
                         </tr>
                     </thead>
-                    <tbody class="tabela-body">
+                    <tbody class="tabela-usuario-body">
                         <tr>
-                            <td class="tabela-body_dado">{usuario.id}</td>
-                            <td class="tabela-body_dado">{usuario.email}</td>
-                            <td class="tabela-body_dado">{usuario.senha}</td>
-                            <td class="tabela-body_dado">{usuario.tipoUsuario}</td>
+                            <td class="tabela-usuario-body_dado">{usuario.id}</td>
+                            <td class="tabela-usuario-body_dado">{usuario.email}</td>
+                            <td class="tabela-usuario-body_dado">{usuario.senha}</td>
+                            <td class="tabela-usuario-body_dado">{usuario.tipoUsuario}</td>
+                            <div class="botoes-usuario">
+                                <button class="botoes-usuario__item botoes-usuario__item--alterar">Alterar</button>
+                                <button class="botoes-usuario__item botoes-usuario__item--deletar">Deletar</button>
+                            </div>
                         </tr>
                     </tbody>
                 </table>
-                <div class="botoes">
-                    <button class="botoes__item botoes__item--alterar">Alterar</button>
-                    <button class="botoes__item botoes__item--deletar">Deletar</button>
-                </div>
             </div>
-            <div id="Cadastrar" class="formulario tabcontent" style="display:none">
-                <label for=""><input class="formulario__item" type="text" placeholder="Nome" /></label>
-                <!-- <label for=""><input class="formulario__item" type="text" placeholder="ID do Usuário" /></label> -->
-                <label for=""><input class="formulario__item" type="text" placeholder="Email" /></label>
-                <label for=""><input class="formulario__item" type="text" placeholder="Senha" /></label>
+            <div id="Cadastrar" class="formulario-usuario tabcontent" style="display:none">
+                <label for=""><input class="formulario-usuario__item" type="text" placeholder="Nome" /></label>
+                <label for=""><input class="formulario-usuario__item" type="email" placeholder="Email" /></label>
+                <label for=""><input class="formulario-usuario__item" type="text" placeholder="Senha" /></label>
                 <!-- FAZER UMA COIXA DE SELEÇÃO? -->
-                <label for=""><input class="formulario__item" type="text" placeholder="Tipo de Usuário" /></label>
-                <!-- <label for=""><input class="formulario__item" type="text" placeholder="ID do Usuário" /></label> -->
-                <button class="formulario__button">Enviar</button>
+                <label for=""><input class="formulario-usuario__item" type="text" placeholder="Tipo de Usuário" /></label>
+                <!-- <select name="" id="">
+                    <option value="">Administrador</option>
+                    <option value="">Médico</option>
+                    <option value="">Paciente</option>
+                </select> -->
+                <button class="formulario-usuario__button">Enviar</button>
             </div>
         </div>
     </main>
