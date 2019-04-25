@@ -36,6 +36,20 @@ Div maior do main será fix */
     text-shadow: -1px 0 rgb(98, 98, 148), 0 1px rgb(98, 98, 148), 1px 0 rgb(98, 98, 148), 0 -1px rgb(98, 98, 148);
 }
 
+.topo__item{
+    float: right;
+    margin-right: 1em;
+    border: 5px solid rgb(191, 228, 253);
+    width: 13em;
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+}
+
+.topo__button{
+    height: 2em;
+    width: 5em;
+    margin-left: 3em;
+}
+
 .menu{
     float: left;
     width: 20%;
@@ -98,14 +112,21 @@ Div maior do main será fix */
 }
 
 .listas__button{
-    margin: 3em 0 0 18.9em;
+    margin: 3em 0 0 4.2em;
     width: 6em;
-    height: 2em;
+    height: 3em;
     text-decoration: underline;
     font-size: 1em;
 }
 
 .listas__button--lista{
+    text-decoration: none;
+    background-color: #a2daff;
+    border: none;
+    color: white;
+}
+
+.listas__button--cadastrar{
     margin: 3em 0 0 0;
     text-decoration-color: darkorange;
     color: darkorange;
@@ -113,31 +134,75 @@ Div maior do main será fix */
     border: none;
 }
 
-.listas__button--cadastrar{
-    text-decoration: none;
-    background-color: #a2daff;
-    border: none;
-    color: white;    
-}
-
 .contorno{
     display: flex;
+    /* background-color: rgb(202, 230, 243); */
+    /* table-layout: fixed; */
     justify-content: center;
     text-align: center;
     justify-items: center;
 }
 
+.tabela{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    border: 1em solid #a2daff44;
+    text-align: center;
+    margin: 0 3em;    
+
+    /* table-layout: fixed; */
+}
+
+.tabela__real{    
+    display: inline-table;
+    border-collapse: collapse;
+}
+
+.tabela-head__titulo{
+    padding: 0 1em;
+    border: 5px solid rgba(107, 161, 156, 0.568);
+}
+
+.tabela-body_dado{
+    padding: 0 1em;
+    border: 5px solid rgba(107, 161, 156, 0.568);
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+}
+
+.botoes__item{
+    width: 5em;
+    height: 1.92em;
+    text-decoration: underline;
+}
+
+.botoes__item--alterar{
+    background-color: gray;
+    color: white;
+    text-decoration-color: white;
+}
+
+.botoes__item--deletar{
+    background-color: darkred;
+    color: white;
+    text-decoration-color: white;
+}
+
 .formulario{
     background-color: #c2dff144;
-    display: flex;  
+    /* display: flex;   */
     flex-direction: column; 
-    padding: 0.5em 3em;
+    padding: 1.60em;
     
 }
 
 .formulario__item{
     width: 20em;
-    height: 4.5em;
+    height: 5em;
     padding: 0 0 0 2em;
     font-size: 0.9em;
     color: darkviolet;
