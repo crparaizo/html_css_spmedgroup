@@ -4,7 +4,7 @@ Div maior do main será fix */
 /* Lembrete: não há body no React */
 /* Ainda não foi implementada a responsividade*/
 *{
-    font-family: 'Raleway';
+    font-family: 'Rokkitt', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,7 +13,6 @@ Div maior do main será fix */
 /* Alterar FONTE das letras */
 .topo-prontuario{
     float: right;
-    /* margin: 0 1.5%; */
      width: 80%;
 }
 
@@ -41,7 +40,6 @@ Div maior do main será fix */
     margin-right: 1em;
     border: 5px solid rgb(191, 228, 253);
     width: 13em;
-    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 }
 
 .topo-prontuario__button{
@@ -56,9 +54,6 @@ Div maior do main será fix */
     border: 1em solid rgb(191, 228, 253);
     text-align: center;
     padding:  1em;
-
-    /* position: absolute;
-    height: 95%; */
 }
 
 .menu-prontuario__titulo{
@@ -75,7 +70,6 @@ Div maior do main será fix */
     font-size: 1.5em;
     color: green;
     text-transform: uppercase;
-    /* margin-bottom: 0.8em; */
 }
 
 .menu-prontuario__link:hover{
@@ -94,7 +88,6 @@ Div maior do main será fix */
 
 .links-prontuario__titulo:hover{
     color: #aaaeff;
-    /* text-decoration: none;   */
 }
 
 .links-prontuario__titulo--selecionado{
@@ -136,8 +129,6 @@ Div maior do main será fix */
 
 .contorno{
     display: flex;
-    /* background-color: rgb(202, 230, 243); */
-    /* table-layout: fixed; */
     justify-content: center;
     text-align: center;
     justify-items: center;
@@ -150,8 +141,8 @@ Div maior do main será fix */
     border: 1em solid #a2daff44;
     text-align: center;
     margin: 0 3em;    
-
-    /* table-layout: fixed; */
+    overflow: scroll;
+    height: 27em;  
 }
 
 .tabela-prontuario__real{    
@@ -194,7 +185,6 @@ Div maior do main será fix */
 
 .formulario-prontuario{
     background-color: #c2dff144;
-    /* display: flex;   */
     flex-direction: column; 
     padding: 1.60em;    
 }

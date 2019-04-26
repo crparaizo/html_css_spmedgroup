@@ -4,17 +4,15 @@ Div maior do main será fix */
 /* Lembrete: não há body no React */
 /* Ainda não foi implementada a responsividade*/
 *{
-    font-family: 'Raleway';
+    font-family: 'Rokkitt', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 /* Alterar FONTE das letras */
 .topo-clinica{
     float: right;
-    /* margin: 0 1.5%; */
      width: 80%;
 }
 
@@ -42,7 +40,6 @@ Div maior do main será fix */
     margin-right: 1em;
     border: 5px solid rgb(191, 228, 253);
     width: 13em;
-    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 }
 
 .topo-clinica__button{
@@ -57,9 +54,6 @@ Div maior do main será fix */
     border: 1em solid rgb(191, 228, 253);
     text-align: center;
     padding:  1em;
-
-    /* position: absolute;
-    height: 95%; */
 }
 
 .menu-clinica__titulo{
@@ -76,7 +70,6 @@ Div maior do main será fix */
     font-size: 1.5em;
     color: green;
     text-transform: uppercase;
-    /* margin-bottom: 0.8em; */
 }
 
 .menu-clinica__link:hover{
@@ -95,7 +88,6 @@ Div maior do main será fix */
 
 .links-clinica__titulo:hover{
     color: #aaaeff;
-    /* text-decoration: none;   */
 }
 
 .links-clinica__titulo--selecionado{
@@ -137,8 +129,6 @@ Div maior do main será fix */
 
 .contorno{
     display: flex;
-    /* background-color: rgb(202, 230, 243); */
-    /* table-layout: fixed; */
     justify-content: center;
     text-align: center;
     justify-items: center;
@@ -150,9 +140,10 @@ Div maior do main será fix */
     justify-content: center;
     border: 1em solid #a2daff44;
     text-align: center;
-    margin: 0 3em;    
-
-    /* table-layout: fixed; */
+    margin: 0 3em;
+    margin: 0 3em; 
+    overflow: scroll;
+    height: 27em;      
 }
 
 .tabela-clinica__real{    
@@ -197,8 +188,7 @@ Div maior do main será fix */
     background-color: #c2dff144;
     /* display: flex;   */
     flex-direction: column; 
-    padding: 1.60em;
-    
+    padding: 1.60em;    
 }
 
 .formulario-clinica__item{

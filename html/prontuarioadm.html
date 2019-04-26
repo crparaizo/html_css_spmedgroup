@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/prontuarioadm.css">
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
     <title>Prontuários</title>
 </head>
 
@@ -62,7 +63,7 @@
                 </nav>
             </div>
             <!-- Escolher um deles: -->
-            <a class="menu-prontuario__link" href="#">Sair</a>
+            <a class="menu-prontuario__link" href="/login">Sair</a>
             <!-- <button>Sair</button> -->
         </div>
     </aside>
@@ -76,28 +77,28 @@
 
         <div class="contorno">
             <div id="Lista" class="tabela-prontuario tabcontent">
-                <table class="tabela__real">
-                    <thead class="tabela-head">
+                <table class="tabela-prontuario__real">
+                    <thead class="tabela-prontuario-head">
                         <tr>
-                            <th class="tabela-head__titulo">Prontuario(ID)</th>
-                            <th class="tabela-head__titulo">Paciente</th>
-                            <th class="tabela-head__titulo">RG</th>
-                            <th class="tabela-head__titulo">CPF</th>
-                            <th class="tabela-head__titulo">Data Nascimento</th>
-                            <th class="tabela-head__titulo">Telefone</th>
-                            <th class="tabela-head__titulo">Endereço</th>
+                            <th class="tabela-prontuario-head__titulo">Prontuario(ID)</th>
+                            <th class="tabela-prontuario-head__titulo">Paciente</th>
+                            <th class="tabela-prontuario-head__titulo">RG</th>
+                            <th class="tabela-prontuario-head__titulo">CPF</th>
+                            <th class="tabela-prontuario-head__titulo">Data Nascimento</th>
+                            <th class="tabela-prontuario-head__titulo">Telefone</th>
+                            <th class="tabela-prontuario-head__titulo">Endereço</th>
                             <!-- <a href="#">Alterar</a> -->
                         </tr>
                     </thead>
-                    <tbody class="tabela-body">
+                    <tbody class="tabela-prontuario-body">
                         <tr>
-                            <td class="tabela-body_dado">{prontuario.id}</td>
-                            <td class="tabela-body_dado">{prontuario.paciente/prontuario}</td>
-                            <td class="tabela-body_dado">{prontuario.rg}</td>
-                            <td class="tabela-body_dado">{prontuario.cpf}</td>
-                            <td class="tabela-body_dado">{prontuario.data}</td>
-                            <td class="tabela-body_dado">{prontuario.telefone}</td>
-                            <td class="tabela-body_dado">{prontuario.endereço}</td>
+                            <td class="tabela-prontuario-body_dado">{prontuario.id}</td>
+                            <td class="tabela-prontuario-body_dado">{prontuario.paciente/prontuario}</td>
+                            <td class="tabela-prontuario-body_dado">{prontuario.rg}</td>
+                            <td class="tabela-prontuario-body_dado">{prontuario.cpf}</td>
+                            <td class="tabela-prontuario-body_dado">{prontuario.data}</td>
+                            <td class="tabela-prontuario-body_dado">{prontuario.telefone}</td>
+                            <td class="tabela-prontuario-body_dado">{prontuario.endereço}</td>
                             <div class="botoes-prontuario">
                                 <button class="botoes-prontuario__item botoes-prontuario__item--alterar">Alterar</button>
                                 <button class="botoes-prontuario__item botoes-prontuario__item--deletar">Deletar</button>
